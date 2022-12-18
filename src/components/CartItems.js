@@ -5,7 +5,7 @@ const CartItems = () => {
   const { cartItems } = useContext(ProductsContext)
 
   const items = cartItems.map((item) => {
-    const { id, image, title, price, description } = item
+    const { id, image, title, price } = item
 
     return (
       <div key={id} className='cart-image-container'>
